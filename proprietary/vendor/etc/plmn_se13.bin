@@ -1,4 +1,6 @@
 
+
+13113Test"Emma
 
 20201
 GR COSMOTE"C-OTE
@@ -232,8 +234,6 @@ Telenor SE"TelenorS
 24803Tele2 EE"Tele2 EE
 
 25001MTS RUS"MTS RUS
-
-25002MegaFon RUS"Megafon
 
 25020Tele2 RU"Tele2
 
@@ -438,6 +438,8 @@ SPM AMERIS"AMERIS
 310020US - Union Telephone"UnionTel
 
 310030AT&T"AT&T
+
+310040Mobi"Mobi
 
 310050GCI"GCI
 
@@ -527,6 +529,8 @@ SPM AMERIS"AMERIS
 
 311480Verizon"Verizon
 
+311500Mobi"Mobi
+
 311530PTCI"PTCI
 
 311560USA OTZ"OTZ
@@ -576,6 +580,8 @@ NetGenuity"NetGenui
 313380OptimERA"OptimERA
 %
 313450Spectrum Mobile"Spectrum
+
+313460Mobi"Mobi
 #
 313790Liberty Mobile"Liberty
 
@@ -1633,8 +1639,6 @@ TelkomSA-R"Telkom-R
 708030HND"HT - 200
 
 71021	CLARO NIC"ClaroNIC
-
-71073	CLARO NIC"ClaroNIC
 
 710300Tigo"Tigo
 
@@ -1777,4 +1781,4 @@ AeroMobile"AeroMob
 
 90150EchoStar Mobile"EML
 
-90171Tampnet"Tampnet%Published TS.25 Database 19 June 2023
+90171Tampnet"Tampnet%Published TS.25 Database 17 July 2023
