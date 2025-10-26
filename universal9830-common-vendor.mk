@@ -73,24 +73,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/listenbackeffect.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/listenbackeffect.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/rgb2bayer.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rgb2bayer.bin \
-    vendor/samsung/universal9830-common/proprietary/vendor/firmware/rxse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rxse.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/sb_ll.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_ll.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/sb_music.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_music.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/sb_others.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_others.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/sv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sv.bin \
-    vendor/samsung/universal9830-common/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/txse3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse3.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/usbin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/usbin.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/usbout.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/usbout.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
-    vendor/samsung/universal9830-common/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/firmware/yuv2bayer.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/yuv2bayer.bin \
-    vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-000048444350:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000048444350 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
-    vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-53454d655345:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-53454d655345 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-5354494d4552:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5354494d4552 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-64756c444152:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-64756c444152 \
@@ -177,7 +172,6 @@ PRODUCT_PACKAGES += \
     libsensorlistener \
     libskeymaster4device \
     libstork_shared \
-    libteecl \
     libuniapi \
     libuniplugin \
     libuuid_vendor \
@@ -185,7 +179,6 @@ PRODUCT_PACKAGES += \
     libvkservice \
     libvpl \
     sensors.flicker \
-    sensors.grip \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.radio-V1-ndk \
@@ -211,7 +204,6 @@ PRODUCT_PACKAGES += \
     rild \
     vendor.samsung.hardware.gnss@2.1-service \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
-    tzdaemon \
     tzts_daemon \
     vaultkeeperd \
     vendor.samsung.hardware.security.proca@2.0-service
