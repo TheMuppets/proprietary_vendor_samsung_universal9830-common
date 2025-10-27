@@ -2277,30 +2277,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libuuid_vendor",
-    stem: "libuuid",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libuuid.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvkmanager_vendor",
     owner: "samsung",
     strip: {
@@ -3204,4 +3180,17 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libOpenCL.so.1.1",
     symlink_target: "/vendor/lib64/egl/libGLES_mali.so",
+}
+
+cc_library_shared {
+    name: "libteecl",
+    compile_multilib: "64",
+    soc_specific: true,
+}
+
+cc_library_shared {
+    name: "libuuid_vendor",
+    stem: "libuuid",
+    compile_multilib: "64",
+    soc_specific: true,
 }

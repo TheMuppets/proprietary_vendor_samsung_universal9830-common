@@ -174,7 +174,6 @@ PRODUCT_PACKAGES += \
     libstork_shared \
     libuniapi \
     libuniplugin \
-    libuuid_vendor \
     libvkmanager_vendor \
     libvkservice \
     libvpl \
