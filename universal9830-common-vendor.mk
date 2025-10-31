@@ -117,8 +117,8 @@ PRODUCT_PACKAGES += \
     gps.default \
     vendor.samsung.hardware.gnss@2.1-impl \
     libSEF.quram \
-    libSemDataProps \
-    libSemTelephonyProps \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     libbayergdccore \
     libcommon \
     libcrane_compiler \
@@ -192,8 +192,8 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
-    vendor.samsung.hardware.radio_manifest_2_33.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_33.xml \
+    vendor.samsung.hardware.radio_manifest_2_34.xml \
+    vendor.samsung.hardware.sehradio_manifest_2_34.xml \
     cass \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.keymaster@4.0_strongbox-service \

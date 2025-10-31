@@ -648,7 +648,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSemDataProps",
+    name: "libVendorSemDataProps",
     owner: "samsung",
     strip: {
         none: true,
@@ -656,7 +656,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libSemDataProps.so",
+                "proprietary/vendor/lib64/libVendorSemDataProps.so",
             ],
             shared_libs: [
                 "liblog",
@@ -673,7 +673,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSemTelephonyProps",
+    name: "libVendorSemTelephonyProps",
     owner: "samsung",
     strip: {
         none: true,
@@ -681,7 +681,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libSemTelephonyProps.so",
+                "proprietary/vendor/lib64/libVendorSemTelephonyProps.so",
             ],
             shared_libs: [
                 "liblog",
@@ -1999,19 +1999,16 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libril_sem.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
                 "libbase",
                 "libbinder_ndk",
-                "android.hardware.radio.config-V1-ndk",
-                "android.hardware.radio.data-V1-ndk",
-                "android.hardware.radio.messaging-V1-ndk",
-                "android.hardware.radio.modem-V1-ndk",
-                "android.hardware.radio.network-V1-ndk",
-                "android.hardware.radio.sim-V1-ndk",
-                "android.hardware.radio.voice-V1-ndk",
+                "android.hardware.radio.config-V2-ndk",
+                "android.hardware.radio.data-V2-ndk",
+                "android.hardware.radio.messaging-V2-ndk",
+                "android.hardware.radio.modem-V2-ndk",
+                "android.hardware.radio.network-V2-ndk",
+                "android.hardware.radio.sap-V1-ndk",
+                "android.hardware.radio.sim-V2-ndk",
+                "android.hardware.radio.voice-V2-ndk",
                 "vendor.samsung.hardware.radio.bridge-V1-ndk",
                 "vendor.samsung.hardware.radio.data-V1-ndk",
                 "vendor.samsung.hardware.radio.messaging-V1-ndk",
@@ -2022,6 +2019,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "librilutils",
                 "libutils",
+                "libfloatingfeature",
                 "libc++",
                 "libc",
                 "libm",
@@ -2083,8 +2081,9 @@ cc_prebuilt_library_shared {
                 "libz",
                 "libutils",
                 "libjsoncpp",
-                "libSemTelephonyProps",
-                "libSemDataProps",
+                "libVendorSemTelephonyProps",
+                "libVendorSemDataProps",
+                "libprotobuf-cpp-full",
                 "libvkmanager_vendor",
                 "libengmode_client",
                 "libbase",
@@ -2094,7 +2093,6 @@ cc_prebuilt_library_shared {
                 "libfloatingfeature",
                 "libsemnativecarrierfeature",
                 "libc++",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc",
                 "libm",
                 "libdl",
@@ -2728,18 +2726,18 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.radio_manifest_2_33.xml",
+    name: "vendor.samsung.hardware.radio_manifest_2_34.xml",
     owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_34.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
 
 prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.sehradio_manifest_2_33.xml",
+    name: "vendor.samsung.hardware.sehradio_manifest_2_34.xml",
     owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_34.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
