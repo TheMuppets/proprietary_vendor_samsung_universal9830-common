@@ -171,11 +171,9 @@ PRODUCT_PACKAGES += \
     libsec_semRil \
     libsensorlistener \
     libskeymaster4device \
-    libstork_shared \
     libuniapi \
     libuniplugin \
     libvkmanager_vendor \
-    libvkservice \
     libvpl \
     sensors.flicker \
     vendor.samsung.hardware.gnss@2.0 \
@@ -194,7 +192,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_34.xml \
     vendor.samsung.hardware.sehradio_manifest_2_34.xml \
-    cass \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.keymaster@4.0_strongbox-service \
     android.hardware.neuralnetworks@1.3-service.eden-drv \
@@ -203,9 +200,7 @@ PRODUCT_PACKAGES += \
     rild \
     vendor.samsung.hardware.gnss@2.1-service \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
-    tzts_daemon \
-    vaultkeeperd \
-    vendor.samsung.hardware.security.proca@2.0-service
+    tzts_daemon
 
 PRODUCT_PACKAGES += \
     vendor_lib_libOpenCL_so \
