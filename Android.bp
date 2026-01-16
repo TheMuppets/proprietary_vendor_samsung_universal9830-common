@@ -2083,7 +2083,7 @@ cc_prebuilt_library_shared {
                 "libjsoncpp",
                 "libVendorSemTelephonyProps",
                 "libVendorSemDataProps",
-                "libprotobuf-cpp-full",
+                "libprotobuf-cpp-full-21.7",
                 "libvkmanager_vendor",
                 "libengmode_client",
                 "libbase",
