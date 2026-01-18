@@ -2173,7 +2173,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libskeymaster4device.so",
             ],
             shared_libs: [
-                "libshim_crypto",
                 "libkeymaster_messages",
                 "libcrypto-v33",
                 "liblog",
