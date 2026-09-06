@@ -11,9 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9830-common/proprietary/vendor/etc/gnss/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
     vendor/samsung/universal9830-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/universal9830-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc \
-    vendor/samsung/universal9830-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc \
     vendor/samsung/universal9830-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
-    vendor/samsung/universal9830-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.eden_runtime@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.eden_runtime@1.0-service.rc \
     vendor/samsung/universal9830-common/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
     vendor/samsung/universal9830-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/universal9830-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
@@ -121,20 +119,18 @@ PRODUCT_PACKAGES += \
     libVendorSemTelephonyProps \
     libbayergdccore \
     libcommon \
+    libcommon_graphgen_export \
     libcrane_compiler \
+    libdove_compiler \
     libeden_model \
     libeden_nn \
-    libeden_nn_on_vendor \
     libeden_osal \
     libeden_profiler \
     libeden_rt \
-    libeden_rt_stub_vendor.edensdk.samsung \
     libeden_ud_cpu \
     libeden_ud_dsp \
     libeden_ud_gpu \
     libeden_ud_npu \
-    libeden_wrapper \
-    libeden_wrapper_sdk \
     libeden_xtool \
     libengmode_client \
     libenn_dsp_dal \
@@ -146,6 +142,7 @@ PRODUCT_PACKAGES += \
     libexynoscamera_plugin_utils \
     libfloatingfeature \
     libgraphgen_ann_import \
+    libgraphgen_ann_import_s \
     libgraphgen_ann_nnc \
     libgraphgen_api \
     libgraphgen_export \
@@ -171,6 +168,7 @@ PRODUCT_PACKAGES += \
     libsec_semRil \
     libsensorlistener \
     libskeymaster4device \
+    libtoco_graphgen_export \
     libuniapi \
     libuniplugin \
     libvkmanager_vendor \
@@ -185,8 +183,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
-    vendor.samsung_slsi.hardware.eden_runtime@1.0-impl \
-    vendor.samsung_slsi.hardware.eden_runtime@1.0 \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
@@ -194,12 +190,10 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.sehradio_manifest_2_34.xml \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.keymaster@4.0_strongbox-service \
-    android.hardware.neuralnetworks@1.3-service.eden-drv \
     gps \
     lhd \
     rild \
     vendor.samsung.hardware.gnss@2.1-service \
-    vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
     tzts_daemon
 
 PRODUCT_PACKAGES += \

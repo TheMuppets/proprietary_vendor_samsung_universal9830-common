@@ -751,6 +751,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcommon_graphgen_export",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcommon_graphgen_export.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcrane_compiler",
     owner: "samsung",
     strip: {
@@ -760,6 +783,31 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libcrane_compiler.so",
+            ],
+            shared_libs: [
+                "libir",
+                "libcommon",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdove_compiler",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdove_compiler.so",
             ],
             shared_libs: [
                 "libir",
@@ -823,32 +871,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libeden_nn_on_vendor",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libeden_nn_on_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libeden_rt_stub_vendor.edensdk.samsung",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -935,36 +957,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libeden_rt_stub_vendor.edensdk.samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libeden_rt_stub_vendor.edensdk.samsung.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "vendor.samsung_slsi.hardware.eden_runtime@1.0",
-                "libion_exynos",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -1083,56 +1075,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libeden_wrapper",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libeden_wrapper.so",
-            ],
-            shared_libs: [
-                "libeden_nn_on_vendor",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libeden_wrapper_sdk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libeden_wrapper_sdk.so",
-            ],
-            shared_libs: [
-                "libeden_nn",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -1420,6 +1362,44 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "liblog",
                 "libutils",
+                "libnativewindow",
+                "android.hardware.neuralnetworks@1.0",
+                "android.hardware.neuralnetworks@1.1",
+                "android.hardware.neuralnetworks@1.2",
+                "android.hardware.neuralnetworks@1.3",
+                "android.hidl.memory@1.0",
+                "libgraphgen_network",
+                "libgraphgen_misc",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgraphgen_ann_import_s",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgraphgen_ann_import_s.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libutils",
+                "libnativewindow",
                 "android.hardware.neuralnetworks@1.0",
                 "android.hardware.neuralnetworks@1.1",
                 "android.hardware.neuralnetworks@1.2",
@@ -1456,6 +1436,7 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "liblog",
                 "libutils",
+                "libnativewindow",
                 "android.hardware.neuralnetworks@1.0",
                 "android.hardware.neuralnetworks@1.1",
                 "android.hardware.neuralnetworks@1.2",
@@ -1487,12 +1468,16 @@ cc_prebuilt_library_shared {
                 "libgraphgen_ann_nnc",
                 "libgraphgen_import",
                 "libgraphgen_ann_import",
+                "libgraphgen_ann_import_s",
                 "libgraphgen_export",
+                "libtoco_graphgen_export",
+                "libcommon_graphgen_export",
                 "libgraphgen_intermediate_process",
                 "libgraphgen_network",
                 "libnpu_compiler",
                 "libcommon",
                 "libcrane_compiler",
+                "libdove_compiler",
                 "libir",
                 "libsait_npu_compiler",
                 "libgraphgen_misc",
@@ -1502,6 +1487,7 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "liblog",
                 "libutils",
+                "libnativewindow",
                 "android.hardware.neuralnetworks@1.0",
                 "android.hardware.neuralnetworks@1.1",
                 "android.hardware.neuralnetworks@1.2",
@@ -1532,6 +1518,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libgraphgen_network",
                 "libgraphgen_misc",
+                "libtoco_graphgen_export",
+                "libcommon_graphgen_export",
                 "liblog",
                 "libm",
                 "libdl",
@@ -1557,6 +1545,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libgraphgen_ann_import",
+                "libgraphgen_ann_import_s",
                 "libgraphgen_network",
                 "libgraphgen_misc",
                 "libcutils",
@@ -1565,6 +1554,7 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "liblog",
                 "libutils",
+                "libnativewindow",
                 "android.hardware.neuralnetworks@1.0",
                 "android.hardware.neuralnetworks@1.1",
                 "android.hardware.neuralnetworks@1.2",
@@ -1597,6 +1587,7 @@ cc_prebuilt_library_shared {
                 "libnpu_compiler",
                 "libcommon",
                 "libcrane_compiler",
+                "libdove_compiler",
                 "libir",
                 "libsait_npu_compiler",
                 "libgraphgen_misc",
@@ -1761,6 +1752,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libsait_npu_compiler",
                 "libcrane_compiler",
+                "libdove_compiler",
                 "libir",
                 "libcommon",
                 "libm",
@@ -2197,6 +2189,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libtoco_graphgen_export",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtoco_graphgen_export.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libuniapi",
     owner: "samsung",
     strip: {
@@ -2577,73 +2592,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.samsung_slsi.hardware.eden_runtime@1.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libbinder",
-                "libsync",
-                "libhardware",
-                "vendor.samsung_slsi.hardware.eden_runtime@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlmemory",
-                "libion_exynos",
-                "libeden_rt",
-                "libeden_nn",
-                "libeden_profiler",
-                "libeden_nn_on_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung_slsi.hardware.eden_runtime@1.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "samsung",
@@ -2760,78 +2708,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "android.hardware.neuralnetworks@1.3-service.eden-drv",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "libhidlmemory",
-                "libnativewindow",
-                "libtextclassifier_hash",
-                "liblog",
-                "libui",
-                "libutils",
-                "libsync",
-                "android.hardware.neuralnetworks@1.0",
-                "android.hardware.neuralnetworks@1.1",
-                "android.hardware.neuralnetworks@1.2",
-                "android.hardware.neuralnetworks@1.3",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libeden_nn",
-                "libeden_rt",
-                "libeden_model",
-                "libeden_osal",
-                "libeden_ud_cpu",
-                "libeden_ud_npu",
-                "libeden_ud_gpu",
-                "libeden_xtool",
-                "libnpuc_api",
-                "libnpuc_backend",
-                "libnpuc_cmdq",
-                "libnpuc_common",
-                "libnpuc_controller",
-                "libnpuc_frontend",
-                "libnpuc_graph",
-                "libnpuc_template",
-                "libgraphgen_api",
-                "libgraphgen_import",
-                "libgraphgen_ann_import",
-                "libgraphgen_ann_nnc",
-                "libgraphgen_misc",
-                "libgraphgen_network",
-                "libgraphgen_intermediate_process",
-                "libgraphgen_export",
-                "libcommon",
-                "libcrane_compiler",
-                "libir",
-                "libnpu_compiler",
-                "libsait_npu_compiler",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
 sh_binary {
     name: "gps",
     owner: "samsung",
@@ -2923,42 +2799,6 @@ cc_prebuilt_binary {
                 "android.hardware.gnss@2.1",
                 "vendor.samsung.hardware.gnss@2.0",
                 "vendor.samsung.hardware.gnss@2.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung_slsi.hardware.eden_runtime@1.0-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libbinder",
-                "libsync",
-                "libhardware",
-                "libhidlmemory",
-                "android.hidl.memory@1.0",
-                "vendor.samsung_slsi.hardware.eden_runtime@1.0",
-                "vendor.samsung_slsi.hardware.eden_runtime@1.0-impl",
                 "libc++",
                 "libc",
                 "libm",
