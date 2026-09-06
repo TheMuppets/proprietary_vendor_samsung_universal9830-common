@@ -99,6 +99,7 @@ PRODUCT_PACKAGES += \
     vulkan.mali \
     libSamsungPostProcessConvertor \
     lib_SoundAlive_SRC384_ver320 \
+    lib_SoundBooster_ver1050 \
     lib_soundaliveresampler \
     libprofileparamstorage \
     libsecaudiocoreutils \
