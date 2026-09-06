@@ -159,7 +159,7 @@ PRODUCT_PACKAGES += \
     libnpuc_template \
     libril_sem \
     libsait_npu_compiler \
-    libsec-ril \
+    libsec-ril-impl \
     libsec_semRil \
     libsecnativefeature \
     libsecril-client \
