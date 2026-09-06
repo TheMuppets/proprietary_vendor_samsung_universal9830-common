@@ -169,7 +169,6 @@ PRODUCT_PACKAGES += \
     libtoco_graphgen_export \
     libuniapi \
     libuniplugin \
-    libvkmanager_vendor \
     libvpl \
     sensors.flicker \
     vendor.samsung.hardware.gnss@2.0 \
