@@ -2827,12 +2827,6 @@ install_symlink {
 }
 
 cc_library_shared {
-    name: "libteecl",
-    compile_multilib: "64",
-    soc_specific: true,
-}
-
-cc_library_shared {
     name: "libuuid_vendor",
     stem: "libuuid",
     compile_multilib: "64",
