@@ -128,7 +128,6 @@ PRODUCT_PACKAGES += \
     libeden_ud_gpu \
     libeden_ud_npu \
     libeden_xtool \
-    libengmode_client \
     libenn_dsp_dal \
     libenn_dsp_fw_graph_parser \
     libenn_dsp_kernels_cpu \
