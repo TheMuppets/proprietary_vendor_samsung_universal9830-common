@@ -107,7 +107,6 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     android.hardware.gnss@2.1-impl \
     flp.default \
-    gatekeeper.exynos990 \
     gps.default \
     vendor.samsung.hardware.gnss@2.1-impl \
     libSEF.quram \
