@@ -102,9 +102,6 @@ PRODUCT_PACKAGES += \
     libSamsungPostProcessConvertor \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
-    libsecnativefeature \
-    libsecril-client \
-    libsemnativecarrierfeature \
     libprofileparamstorage \
     libsecaudiocoreutils \
     libspatializerparamstorage \
@@ -166,6 +163,9 @@ PRODUCT_PACKAGES += \
     libsait_npu_compiler \
     libsec-ril \
     libsec_semRil \
+    libsecnativefeature \
+    libsecril-client \
+    libsemnativecarrierfeature \
     libsensorlistener \
     libskeymaster4device \
     libtoco_graphgen_export \
